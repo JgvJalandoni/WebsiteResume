@@ -140,23 +140,21 @@
     };
 
     // Open modal
-    document.querySelectorAll('.view-details').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const projectId = this.getAttribute('data-project');
-            console.log('Button clicked:', projectId); // Add this line for debugging
-            const modal = modals[projectId];
+    $('.view-details').on('click', function(e) {
+        e.preventDefault();
+        const projectId = $(this).data('project');
+        console.log('Button clicked:', projectId);
+        const modal = modals[projectId];
 
-            if (modal) {
-                modal.style.display = 'block';
-                document.body.style.overflow = 'hidden';
+        if (modal) {
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
 
-                // Animation
-                setTimeout(() => {
-                    modal.querySelector('.modal-content').style.opacity = '1';
-                }, 10);
-            }
-        });
+            // Animation
+            setTimeout(() => {
+                modal.querySelector('.modal-content').style.opacity = '1';
+            }, 10);
+        }
     });
 
     // Close modal
