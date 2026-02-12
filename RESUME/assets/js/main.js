@@ -79,7 +79,7 @@
     });
 
     // Typewriter effect
-    const fullText = 'Full Stack Developer • Linux Enthusiast • Administration Enthusiast';
+    const fullText = 'Full Stack Developer • Cybersecurity Enthusiast • Administration Enthusiast';
     let charIndex = 0;
     let isDeleting = false;
     const typewriterElement = document.querySelector('.typewriter .role');
