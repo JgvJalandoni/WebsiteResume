@@ -143,7 +143,6 @@
     $('.view-details').on('click', function(e) {
         e.preventDefault();
         const projectId = $(this).data('project');
-        console.log('Button clicked:', projectId);
         const modal = modals[projectId];
 
         if (modal) {
