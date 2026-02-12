@@ -791,6 +791,15 @@ body {
         width: 95%;
         padding: 1rem;
     }
+
+    .project-overlay {
+        opacity: 1;
+        background: rgba(102, 126, 234, 0.7); /* Make it a bit more transparent */
+    }
+
+    .project-card:hover .project-overlay {
+        background: rgba(102, 126, 234, 0.9); /* Darken on hover for feedback */
+    }
 }
 
 /* Scrollbar Styling */
