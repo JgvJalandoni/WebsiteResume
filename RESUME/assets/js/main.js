@@ -135,7 +135,8 @@
     // Project modals
     const modals = {
         'discord-bot': document.getElementById('modal-discord-bot'),
-        'game-server': document.getElementById('modal-game-server')
+        'game-server': document.getElementById('modal-game-server'),
+        'clinic-app': document.getElementById('modal-clinic-app')
     };
 
     // Open modal

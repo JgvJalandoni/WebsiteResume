@@ -202,6 +202,19 @@
                         <span class="project-tag">Infrastructure</span>
                     </div>
                 </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="images/doctorTryingTheSystem.png" alt="Clinic Management System" />
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="clinic-app">View Details</button>
+                            <a href="https://github.com/JgvJalandoni/Geneva-Clinic-Management-System" target="_blank" class="live-demo-btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Geneva Clinic Management System</h3>
+                        <span class="project-tag">Desktop App</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -310,6 +323,41 @@
                     <span class="tech-badge">Pterodactyl</span>
                     <span class="tech-badge">VPS</span>
                     <span class="tech-badge">DNS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-clinic-app" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Geneva Clinic Management System</h2>
+            <div class="modal-images">
+                <img src="images/doctorTryingTheSystem.png" alt="Doctor testing the system" />
+                <img src="images/receiptOfProffesionalFee.png" alt="System receipt" />
+            </div>
+            <div class="modal-details">
+                <h3>Project Overview</h3>
+                <p><strong>GitHub Repository:</strong> <a href="https://github.com/JgvJalandoni/Geneva-Clinic-Management-System" target="_blank">View on GitHub</a></p>
+                <p>This project represents my first successful professional deployment, commissioned by <strong><a href="https://www.facebook.com/ggdelapena" target="_blank">Dr. Gene Garrucho Dela Pena</a></strong> for her private practice. The objective was to modernize the clinic's record-keeping by transitioning from a manual system to a robust, digital database solution.</p>
+                
+                <h3>Hardware Implementation & Problem Solving</h3>
+                <p>The project involved unique hardware constraints and sustainability goals. Tasked with repurposing legacy hardware, I successfully integrated the clinic's existing UPS, monitor, and peripherals. When the primary workstation (an Intel NUC 10) was found to be non-functional, I pivoted the architecture to utilize a <strong>Raspberry Pi</strong> as the dedicated server and workstation. I personally managed the hardware restoration, providing custom electrical cabling and infrastructure to ensure a stable, production-ready environment on low-power, high-efficiency hardware.</p>
+                
+                <ul>
+                    <li>Developed a hyper-optimized Clinic Management System using Python and CustomTkinter, designed for performance on modest hardware like the Raspberry Pi.</li>
+                    <li>Implemented a high-performance caching architecture with dirty-flag tracking for real-time dashboard statistics and O(1) lookups.</li>
+                    <li>Engineered an offline-first SQLite database layer with comprehensive indexing and connection pooling for maximum reliability.</li>
+                    <li>Built a modern, accessibility-focused UI with advanced filtering, patient history tracking, and automated vital signs logging.</li>
+                    <li>Integrated secure admin authentication and automated database backup/export functionality for critical medical data protection.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">CustomTkinter</span>
+                    <span class="tech-badge">SQLite3</span>
+                    <span class="tech-badge">Raspberry Pi</span>
+                    <span class="tech-badge">Linux</span>
+                    <span class="tech-badge">Performance Optimization</span>
                 </div>
             </div>
         </div>
