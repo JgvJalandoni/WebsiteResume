@@ -144,6 +144,7 @@
         button.addEventListener('click', function(e) {
             e.preventDefault();
             const projectId = this.getAttribute('data-project');
+            console.log('Button clicked:', projectId); // Add this line for debugging
             const modal = modals[projectId];
 
             if (modal) {
